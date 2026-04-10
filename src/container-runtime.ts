@@ -7,8 +7,8 @@ import os from 'os';
 
 import { logger } from './logger.js';
 
-/** The container runtime binary name. */
-export const CONTAINER_RUNTIME_BIN = 'docker';
+/** The container runtime binary name. Podman is Docker-compatible and rootless. */
+export const CONTAINER_RUNTIME_BIN = 'podman';
 
 /** CLI args needed for the container to resolve the host gateway. */
 export function hostGatewayArgs(): string[] {
